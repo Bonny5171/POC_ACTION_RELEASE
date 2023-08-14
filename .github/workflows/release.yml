@@ -9,16 +9,26 @@
           uses: actions/checkout@v2
         - name: Install the dependancies
           run: npm ci
+
         - name: Initialise the NPM config
           run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
           env:
             NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
         - name: Initialize Git user
           run: |
             git config --global user.email "luis.city@gmail.com"
             git config --global user.name "Release Workflow"
+
+        - name: Check config
+          run: npm config list
+
+        - name: Check identidade
+          run: npm whoami
+
         - name: Log git status
           run: git status
+
         - name: Run release
           run: npm run release --ci
           env:
