@@ -6,10 +6,13 @@
         "before:init": ["git pull"],
     	  "after:bump": "npx auto-changelog -p",
       },
+      "git": {
+          "tagName": "v${version}"
+      },
       "github": {
         "release": true
       },
       "npm": {
-        "publish": true
+        "publish": false
       }
 }
