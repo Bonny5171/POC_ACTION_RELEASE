@@ -6,6 +6,7 @@ jobs:
     steps:
     - name: Checkout source code
       uses: actions/checkout@v2
+
     - name: Install the dependancies
       run: npm ci
 
@@ -18,9 +19,6 @@ jobs:
       run: |
         git config --global user.email "luis.city@gmail.com"
         git config --global user.name "Release Workflow"
-
-    #- name: Atualiza ChangeLog
-    #  run: npm run auto-changelog
 
     - name: Log git status
       run: git status
