@@ -6,7 +6,7 @@
       },
       "hooks": {
         "before:init": ["git pull"],
-    	  "after:bump": "npx auto-changelog -p"
+    	  "after:bump": "npm auto-changelog -p"
       },
       "github": {
         "release": true
