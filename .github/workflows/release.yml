@@ -19,8 +19,8 @@ jobs:
         git config --global user.email "luis.city@gmail.com"
         git config --global user.name "Release Workflow"
 
-    - name: Atualiza ChangeLog
-      run: npm run auto-changelog
+    #- name: Atualiza ChangeLog
+    #  run: npm run auto-changelog
 
     - name: Log git status
       run: git status
