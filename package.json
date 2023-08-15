@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release": "release-it --npm.skipChecks "
+    "release": "release-it"
   },
   "author": "",
   "license": "ISC",
