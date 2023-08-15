@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release": "release-it --no-npm"
+    "release": "release-it"
   },
   "author": "",
   "license": "ISC",
