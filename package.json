@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release": "release-it"
+    "release": "release-it",
+    "auto-changelog": "auto-changelog -p"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "auto-changelog": "^2.4.0",
     "release-it": "^16.1.5"
   }
 }
