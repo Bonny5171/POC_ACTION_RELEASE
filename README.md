@@ -3,3 +3,4 @@
 - Teste novo change-log
 - - Teste novo change-log
 - - Teste novo change-log
+- Teste novo change-log- Teste novo change-log
